@@ -150,7 +150,7 @@
             els[i].fakeHolder = node;
             node.el = els[i];
             parent.appendChild(node);
-
+            els[i].value !== '' && (node.style.display = 'none');
             addEvent(els[i].fakeHolder,'click',function(e){
                 this.el.focus();
             });
